@@ -1,0 +1,753 @@
+*{
+    box-sizing: border-box;
+}
+ 
+html{
+    height: 100%;    
+    font-family: 'Alatsi', sans-serif;
+    overflow-x: hidden;
+    z-index: -10;
+}
+
+body{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.main-container{
+    position: relative;   
+    height: 100%;    
+    color:#574141; 
+    z-index: -1;
+}
+
+.block-design-0{
+    position: absolute;
+    background: #150940;
+    width: 25%;
+    height: 140%;
+    z-index: 1;
+    right: -22%;
+    top: 27%;
+    transform: rotate(5deg);
+/*    border: 5px solid #BF2850;*/
+}
+
+.mobile-nav-container{
+    display: none;    
+}
+
+.nav-container{
+    position: absolute;
+    top:5%;
+    left: 12%;
+    z-index: 99;
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.nav-options{
+    text-align: center;
+    width: 12%;    
+    cursor: pointer;
+    font-size: 1.3rem;    
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-options a{
+    font-size: 1.3rem;    
+    font-weight: bold;
+    color:#574141;
+    text-decoration: none;    
+    transition: .5s
+}
+
+.nav-options a:hover{ 
+    color:#150940;
+}
+
+.landing-container{
+    height: 100%;
+    display: flex;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.landing-start-container{    
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background: #150940;
+    transform: rotate(5deg) translateX(-25%) scale(1.1); 
+/*    border: 3px solid #BF2850;*/
+    -webkit-backface-visibility: hidden;
+}
+
+.landing-start-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20%;
+    right: 10%;
+    top:30%;
+    height: 10%;    
+    transform: rotate(-5deg);
+    color: #F2E74B;
+    font-size: 3rem;
+
+}
+
+.landing-end-container{
+    position: absolute;
+    height: 100%;
+    width:75%;
+    right:0;
+    background: #F2E74B;    
+    z-index: -1
+}
+
+.landing-end-header{
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    left: 15%;
+    top:38%;
+    font-size: 6.5rem;
+    color: #150940;    
+}
+
+.landing-gfx-1{
+    opacity: 0;
+    animation: slide-content-1 20s ease-out infinite 2s;
+}
+
+.landing-gfx-2{
+    opacity: 0;
+    animation: slide-content-2 20s ease-out infinite 6s;
+}
+
+.landing-gfx-3{
+    opacity: 0;
+    animation: slide-content-3 20s ease-out infinite 12s;
+}
+
+.landing-gfx-4{
+    opacity: 0;
+    transform: scale(3);
+    background: url(images/Parralax%20MK3.png) center / contain no-repeat;     
+    animation: slide-content-4 20s ease-out infinite 18.1s;
+}
+
+.banner-container{    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6%;
+    background: seagreen
+}
+
+.banner-content{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: rotate(-4deg) scale(4.5);
+/*    border: 1px solid #BF2850;*/
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-content:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/laptop-art.jpg) center / contain no-repeat;  
+    z-index: -1;    
+    left: -8%;
+    top:-30%;
+    transform: rotate(7deg) scale(1.4);
+        
+}
+
+.banner-content-statement{
+    position: absolute;
+    height: 100%;
+    width: 8%;    
+    transform: rotate(4deg);
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 5px;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+
+
+.home-points-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 130%;
+    background: #F2E74B;
+    z-index: -1;    
+}
+
+.home-points-container:after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: url(images/laptop-art.png) center / contain no-repeat;
+    z-index: 0;
+    left:8%;    
+    bottom: 10%;
+
+               
+}
+
+
+.home-point-box{
+    position: absolute;
+    height: 95%;
+    width: 60%;
+/*
+    border: 5px solid #BF2850; 
+    filter: drop-shadow(2px 4px 6px black);
+*/
+/*    background: url(/images/parralax-gfx-2.png) center / contain no-repeat;  */
+    
+}
+
+.home-points-services{    
+    position: absolute;    
+    height: 25%;
+    width: 40%;
+    left: 25%;
+    top:15%;
+}
+
+.points-services-heading{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 4rem;
+    height: 40%;
+    width: 50%;
+    color: #150940;
+}
+
+.points-services-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+
+}
+
+.points-services-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 25%;
+    border-radius: 50%;
+    background: #150940;
+    color: #F2E74B;
+    font-size: 1.8rem;
+        
+}
+
+
+.home-points-results{    
+    position: absolute;  
+    height: 25%;
+    width: 40%;
+    right: 13%;
+    bottom:25%;
+}
+
+.points-results-heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 4rem;
+    height: 40%;
+    width: 75%;
+    padding-left: 50px;
+    color: #150940;
+}
+
+.points-results-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+
+}
+
+.points-results-icon{    
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 95%;
+    width: 25%;
+    border-radius: 50%;
+    background: #150940;
+    color: #F2E74B;
+    font-size: 2.8rem;      
+
+}
+
+.points-services-popup{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 55%;
+    width: 25%;
+    border-radius: 50%;
+    background: #150940;    
+    transition: 1s;
+    z-index: 1;
+    opacity: 0;
+/*    transform: scale(4);*/
+}
+
+.point-enlarge-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 45%;
+}
+
+.point-enlarge-tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
+
+.point-enlarge-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 70%;    
+    font-size: 0.3rem;
+}
+
+.mk-1:hover .mk-popup-1{
+    opacity: 1;
+    transform: scale(4);    
+    background: #16141d;    
+}
+
+.mk-2:hover .mk-popup-2{
+    opacity: 1;
+    transform: scale(4);    
+    background: #16141d;    
+}
+
+.mk-3:hover .mk-popup-3{
+    opacity: 1;
+    transform: scale(4);    
+    background: #16141d;    
+}
+
+/*
+.marketing-icon::before{
+    content: '';
+    z-index: 0;
+    opacity: 0;
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    border-radius: 50%;
+    background: red;    
+    transition: 1s;
+}
+*/
+
+
+.points-results-icon label{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0px 10px
+}
+
+.footer-info-container:before{    
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: white;
+    transform: rotate(-3deg) scale(2) translateY(-130%);
+    z-index: 1;
+/*    border: 2px solid #BF2850;*/
+    
+}
+
+.footer-info-container{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 6%;
+    background: white;   
+}
+
+
+.footer-info-container:after{    
+    position: absolute;
+    content: '';
+    width:100%;
+    height: 240%;
+    background: white;
+    bottom:0%; 
+    transform: rotate(-1deg) scale(1.1)translateY(-20%)
+}
+
+
+.footer-info-banner{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;    
+    width: 80%;
+    height: 320%;
+    z-index: 1;
+    top: -230%;    
+}
+
+
+.footer-info-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    width: 70%;
+    height: 80%;    
+}
+
+.footer-img-container{
+    width: 20%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.footer-info-img{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    right: -5%;
+    top: -30%;
+    background: url(images/Parralax%20MK3.png) center / contain no-repeat;    
+}
+
+@keyframes slide-content-1{
+    0%{
+        transform: translateY(-15%) translateX(30%) scale(1);
+        opacity: 0;
+    }
+    5%{
+        transform: translateY(15%) translateX(30%) scale(1);
+        opacity: 1;
+    }
+    20%{
+        transform: translateY(15%) translateX(30%) scale(1);
+        opacity: 1;
+    }
+    25%{
+        transform: translateY(60%) translateX(30%) scale(0.8);
+        opacity: 0;
+    }
+    95%{
+        transform: translateY(-40%) translateX(30%) scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-15%) translateX(30%) scale(1);
+        opacity: 0;
+    }        
+}
+
+@keyframes slide-content-2{
+    0%{
+        transform: translateY(-65%) translateX(40%) scale(0.8);
+        opacity: 0;
+    }
+    5%{
+        transform: translateY(-40%) translateX(40%) scale(1);
+        opacity: 1;
+    }
+    30%{
+        transform: translateY(-40%) translateX(40%) scale(1);
+        opacity: 1;
+    }
+    35%{
+        transform: translateY(25%) translateX(40%) scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-65%) translateX(40%) scale(0.8);
+        opacity: 0;
+    }       
+}
+
+@keyframes slide-content-3{
+    0%{
+        transform: translateY(-125%) translateX(42%) scale(0.8);
+        opacity: 0;
+        color: #150940;
+    }
+    5%{
+        transform: translateY(-90%) translateX(42%) scale(1);
+        opacity: 1;
+        color: #150940;
+    }
+    30%{
+        transform: translateY(-90%) translateX(42%) scale(1);
+        opacity: 1;
+        color: #150940;
+    }
+    35%{
+        transform: translateY(-30%) translateX(42%) scale(0.8);
+        opacity: 0;
+        color: black;
+    }
+    100%{
+        transform: translateY(-125%) translateX(42%) scale(0.8);
+        opacity: 0;
+        color: #150940;
+    }       
+}
+
+
+@keyframes slide-content-4{
+    0%{
+        transform:translateX(35%) scale(3);
+        opacity: 0;
+    }
+    5%{
+        transform: translateX(35%) scale(3);
+        opacity: 1;
+    }
+    18%{
+        transform: translateX(35%) scale(3);
+        opacity: 1;
+    }
+    22%{
+        transform:translateX(35%) scale(3);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(35%) scale(3);
+        opacity: 0;
+    }       
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-container{
+        display: none
+    }
+    
+    .mobile-nav-container{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 10000;
+        background: red;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,1);        
+        flex-wrap: wrap;
+    }
+    
+    .mobile-nav-container:after{
+        content: '';
+        position: fixed;
+        top: 9vh;
+        left: 0;
+        width: 100vw;
+        z-index: 1;
+        background: rgba(255,255,255,1);        
+        height: 3vh;
+        transform: rotateZ(-2deg);
+            
+    }
+    
+    .nav-options{        
+        width: 30%;        
+    }
+    
+    .nav-options a{
+        color: black;
+        
+    }
+    
+    .landing-start-header{
+        width: 100%;
+        right: -15%;
+        font-size: 1.5rem;
+        top:40%;
+    }
+        
+    .landing-end-header{
+        font-size: 2rem;
+        left: 24%;
+        top: 45%;
+    }
+    
+    /*    image*/
+    .landing-gfx-4{
+        width: 25%;
+        height: 25%;
+        left: 35%;
+        top:35%;
+    }
+    
+    .banner-content-statement{
+        width: 20%;
+        font-size: 4px;
+    }
+
+    .points-services-heading{
+        width: 100%;
+        font-size: 3.5rem;
+    }
+    
+    .points-results-heading{
+        justify-content: flex-end
+    }
+        
+    .points-services-icon{
+        width: 55%;
+        height: 70%;
+        padding: 50px;
+        margin: 5px;
+        font-size: 1.3rem;
+        text-align: center
+    }
+    
+    .mk-1:hover .mk-popup-1{        
+        opacity: 1;
+        width:80%;
+        transform: scale(4) translateX(25px);
+    }
+    
+    .mk-2:hover .mk-popup-2{        
+        opacity: 1;
+        width:80%;
+        transform: scale(4) translateX(0px);
+    }
+    
+    .mk-3:hover .mk-popup-3{        
+        opacity: 1;
+        width:80%;
+        transform: scale(4) translateX(-28px);
+    }
+    
+    .point-enlarge-container{
+        height: 70%;
+        width: 80%;
+        font-size: 5px;
+    }
+    
+    .point-enlarge-content{
+        width: 80%;
+    }
+    
+    .home-points-container:after{
+        display: none;
+    }
+    
+    .home-points-results{
+        right:24%;
+        bottom: 26%
+    }
+    
+    .points-results-icon{
+        width: 55%;
+        height: 70%;
+        padding: 50px;
+        margin: 5px;        
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .points-results-icon label{
+        font-size: 15px;
+    }
+    
+    .footer-info-banner{
+        width: 100%;
+        left: 10%;
+    }
+    
+    .footer-info-content{
+        width: 100%;
+        flex-wrap: none;
+    }
+    
+    .footer-info-img{
+        top:-70%;
+        left:-10%;
+        width: 100%;
+        height: 130%
+    } 
+  
+}
+
+
+
+/*
+
+.about-banner-content:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/images/laptop-art.jpg) center / contain no-repeat;  
+    z-index: -1;    
+    left: -8%;
+    top:-30%;
+    transform: rotate(7deg) scale(1.4);
+        
+}
+*/

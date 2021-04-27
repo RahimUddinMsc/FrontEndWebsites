@@ -1,0 +1,332 @@
+.block-design-2{
+    position: absolute;
+    background: #150940;
+    width: 25%;
+    height: 100%;
+    z-index: 1;
+    right: -20%;
+    top: 28%;
+    transform: rotate(-16deg);
+/*    border: 5px solid #BF2850;*/
+}
+
+
+
+/*landing container*/
+.about-landing-container{
+    height: 50%;
+    display: flex;
+    width:100%;    
+    position: relative;
+    z-index: -1;
+}
+
+
+.about-end-container{
+    position: absolute;
+    height: 100%;
+    width:75%;
+    right:0;
+    background: #F2E74B;    
+    z-index: -1
+}
+
+
+.about-start-container{    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #150940;
+    left:-32%;
+    top:-65%;
+    transform: rotate(105deg) translateX(-25%) scale(1.4); 
+/*    border: 3px solid #BF2850;*/
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+}
+
+
+.about-start-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20%;
+    left: 65%;
+    top:20%;
+    height: 10%;    
+    transform: rotate(-105deg);
+    color: #F2E74B;
+    font-size: 3rem;
+}
+
+.about-end-header{
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    left: 8%;
+    top:46%;
+    font-size: 6.5rem;
+    color: #150940;    
+}
+
+.about-banner-container{    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: seagreen;
+    z-index: -10;
+    
+}
+
+.about-statement-container:before{
+    content: '';
+    position: absolute;
+    top:-8%;
+    width: 100%;
+    height: 10%;
+    background: black;
+    z-index: 1;
+    transform: rotate(1deg);
+    background: #F2E74B;
+    
+}
+
+.about-statement-container{
+    width: 100%;
+    height: 25%;
+    background: white;
+}
+
+.about-banner-statement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15%;
+    width: 50%;
+    height: 25%;
+    background: white;    
+/*    border: 1px solid #BF2850;*/
+    justify-content: center;    
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.3rem;        
+    animation: fade-in-about 2s ease-out forwards;    
+}
+
+.about-banner-section::before{
+    content: '';
+    position: absolute;
+    top: -2%;
+    width: 100%;
+    height: 15%;
+    background: #F2E74B;
+    transform: rotate(-2deg)
+        
+}
+
+.about-banner-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    background: #F2E74B;    
+}
+
+.about-banner-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top:7%;
+    height:65%;
+    width:80%;    
+/*    background: red;        */
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: space-around;
+    width:25%;
+    height: 70%;/*    background: black;*/
+    opacity: 0;
+    animation: fade-in-about 2s ease-out forwards 1.2s;    
+}
+
+.about-card-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 66%;
+    height: 40%;    
+    border-radius: 50%;    
+    font-size:5rem;
+    color:#150940
+/*    background: blue;    */
+}
+
+.about-icon-subtext{
+    font-size:2rem;
+}
+
+.about-card-text{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 25%;
+    font-size:1.2rem;
+/*    background: blue;    */    
+}
+
+.about-card-award{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    width:45%;
+    height: 90%;
+    opacity: 0;
+    animation: fade-in-about 2s ease-out forwards 2.1s;   
+}
+
+
+.about-award-wrapper{
+    display: flex;    
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    height: 80%;
+    width:100%;
+/*    background: purple;*/
+}
+
+.about-award-text{
+    display: flex;        
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 100%;
+    font-size: 4rem;
+    color:#150940
+/*    background: blue;*/
+}
+
+.about-award-icon-wrapper{
+    display: flex;        
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+/*    background: green;*/
+}
+
+.about-award-icon{
+    width: 28%;
+    height: 100%;
+    background: blue;        
+}
+
+.about-award-icon:nth-child(1){
+    background: url(images/iso-1.png) center / contain no-repeat;  
+}
+
+.about-award-icon:nth-child(2){
+    background: url(images/micro-cert.png) center / contain no-repeat;  
+}
+
+.about-award-icon:nth-child(3){
+    transform: scale(1.15);
+    background: url(images/web-cert.png) center / contain no-repeat;  
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .block-design-2{
+        display: none;
+    }
+    
+    .about-landing-container{
+        height: 65%
+    }
+    
+    .about-start-container{
+        top:-33%;
+        left:8%;
+    }
+    
+    .about-start-header{
+        left:75%;
+        top:36%
+    }
+    
+    .about-end-container{
+        width: 100%;
+    }
+    
+    .about-end-header{
+        top:65%;
+        left:25%;
+    
+    }
+    
+    .about-banner-container{
+        height: 160%;
+    }
+    
+    .about-banner-statement{
+        width: 70%;
+        font-size: 15px
+    }
+    
+    .about-banner-section::before{
+        height: 5%;
+    }
+    
+    .about-banner-content{
+        flex-direction: column;
+    }
+    
+    .about-card{
+        width: 120%;
+    }
+    
+    .about-card-icon{
+        font-size: 65px
+    }
+    
+    .about-card-text{
+        font-size: 15px
+    }
+    
+    .about-card-award{
+        width: 100%;
+    }
+    
+    .about-award-text{
+        font-size:50px
+            
+    }
+}
+
+@keyframes fade-in-about {
+    0%{        
+        opacity: 0
+    }        
+    100%{
+        opacity: 1;    
+    }
+}
